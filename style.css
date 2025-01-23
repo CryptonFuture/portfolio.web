@@ -1,0 +1,22 @@
+
+* {
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "poppin" - , sans-serif;
+}
+
+.portflio-coantaner{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navigation_bar{
+    display: flex  ;
+    gap: 3.5rem ;
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 50px;
+}
