@@ -9,4 +9,15 @@ const typed = new Typed('.multiple-text', {
 
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const skillCircles = document.querySelectorAll(".skill-circle");
+  
+    skillCircles.forEach((circle) => {
+      const percent = circle.getAttribute("data-percent");
+      circle.style.setProperty("--percent", `${(percent / 100) * 360}deg`);
+    });
+  });
+
+
    
