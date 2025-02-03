@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.toggleBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px !important;
+}
+
+.toggleBtn button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.toggleBtn button i {
+    font-size: 2.6rem;
+    color: #ffffff;
+    transition: 0.2s;
+    animation: toggleAnimation 0.8s ease-in 0s infinite alternate forwards;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: var(--bg-color);
+    transform: translateX(-100%);
+    transition: 0.3s ease-out;
+    z-index: 20;
+    overflow: hidden;
+    display: none;
+}
+
+.showSidebar {
+    width: 100% !important;
+    transform: translateX(0%) !important;
+}
+
+.sdbrheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 10%;
+    box-shadow: 0px 5px 10px var(--main-color);
+}
+
+.sdbrLogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sdbrLogo h1 {
+    font-size: 2.8rem;
+    font-family: 'Nunito';
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.sdbrBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sdbrBtn button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sdbrBtn button i {
+    font-size: 2.8rem;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.sdbrBtn button i:hover {
+    transform: rotate(360deg);
+    color: var(--main-color);
+}
+
+.sdbrBtn button i:active {
+    color: var(--main-color);
+}
+
+.sdbrItems {
+    padding: 20px 0px !important;
+}
+
+.sdbrItems ul {
+    list-style: none;
+    padding: 0px 2%;
+}
+
+.sdbrItems ul li {
+    width: 100%;
+    position: relative;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 6px 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.sdbrItems ul li:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+}
+
+.sdbrItems ul li a {
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 500;
+    padding: auto;
+    padding: 7px calc(100%) 8px 20px;
+    transition: 0.3s;
+}
+
+.sdbrItems ul li a:active {
+    color: var(--main-color);
+}
+
+.sdbrIcons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sdbrIcn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.sdbrIcn a {
+    text-decoration: none;
+    font-size: 2.6rem;
+    color: white;
+    transition: 0.4s;
+}
+
+.sdbrIcn a:hover {
+    transform: rotate(360deg);
+    color: var(--main-color);
+}
+
+
+.hide {
+    display: none;
+}
+
+
+
+/* Smartphones Mobile Small*/
+@media only screen and (max-width: 320px) {
+    .sidebar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 30px !important;
+    }
+
+    .logo h1 {
+        font-size: 2.8rem;
+    }
+
+    .toggleBtn {
+        display: block;
+        padding-right: 40px !important;
+    }
+
+    .toggleBtn button i {
+        font-size: 2rem;
+    }
+
+    .contentText {
+        margin-bottom: 60px;
+    }
+
+    .contentText h1 {
+        font-size: 2.6rem;
+    }
+
+    .sidebar {
+        width: 100vw;
+    }
+
+    .sdbrLogo h1 {
+        font-size: 3.2rem;
+    }
+
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+
+    .sdbrItems ul li a {
+        font-size: 2.2rem;
+    }
+
+    .sdbrIcn a {
+        font-size: 2.3rem;
+    }
+}
+
+
+/* Smartphones Mobile Medium*/
+@media(min-width: 321px) and (max-width: 375px) {
+    .sidebar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 30px !important;
+    }
+
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .toggleBtn {
+        display: block;
+        padding-right: 40px !important;
+    }
+
+    .toggleBtn button i {
+        font-size: 2.2rem;
+    }
+
+    .contentText {
+        margin-bottom: 60px;
+    }
+
+    .contentText h1 {
+        font-size: 3rem;
+    }
+
+    .sidebar {
+        width: 100vw;
+    }
+
+    .sdbrLogo h1 {
+        font-size: 3.2rem;
+    }
+
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+
+    .sdbrItems ul li a {
+        font-size: 2.2rem;
+    }
+
+    .sdbrIcn a {
+        font-size: 2.3rem;
+    }
+}
+
+/* Smartphones Mobile Large*/
+@media(min-width: 376px) and (max-width: 500px) {
+    .sidebar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 30px !important;
+    }
+
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .toggleBtn {
+        display: block;
+        padding-right: 40px !important;
+    }
+
+    .toggleBtn button i {
+        font-size: 2.2rem;
+    }
+
+    .contentText {
+        margin-bottom: 60px;
+    }
+
+    .contentText h1 {
+        font-size: 3rem;
+    }
+
+    .sidebar {
+        width: 100vw;
+    }
+
+    .sdbrLogo h1 {
+        font-size: 3.2rem;
+    }
+
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+
+    .sdbrItems ul li a {
+        font-size: 2.2rem;
+    }
+
+    .sdbrIcn a {
+        font-size: 2.3rem;
+    }
+}
+
+
+/*  Tablet  */
+@media(min-width: 501px) and (max-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 30px !important;
+    }
+
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .toggleBtn {
+        padding-right: 40px !important;
+        display: block;
+    }
+
+    .toggleBtn button i {
+        font-size: 2.2rem;
+    }
+
+    .contentText {
+        margin-bottom: 60px;
+    }
+
+    .contentText h1 {
+        font-size: 3rem;
+    }
+
+    .sidebar {
+        width: 100vw;
+    }
+
+    .sdbrLogo h1 {
+        font-size: 3.2rem;
+    }
+
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+
+    .sdbrItems ul li a {
+        font-size: 2.2rem;
+    }
+
+    .sdbrIcn a {
+        font-size: 2.3rem;
+    }
+}
