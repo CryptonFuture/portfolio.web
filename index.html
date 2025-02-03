@@ -1,20 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="portfolio-container">
-      <ul class="navigation_bar">
-        <li><a href="#">Home </a></li>
-        <li><a href="#">About Me </a></li>
-        <li><a href="#">Services </a></li>
-        <li><a href="#">Projects </a></li>
-        <li><a href="#">Contact Me </a></li>
-      </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huzaifa portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Mine_projects</a>
+
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="toggleBtn hide">
+            <button class="menuButton"><i class="p-0 fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+
+    <div class="sidebar">
+        <div class="sdbrheader">
+            <div class="sdbrLogo">
+                <h1 class="m-0">Portfolio</h1>
+            </div>
+            <div class="sdbrBtn">
+                <button class="crossButton"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="sdbrNavigateItems">
+            <div class="sdbrItems">
+                <ul class="m-0">
+                    <li><a class="activeBtn" href="#home">Home</a></li>
+                    <li><a class="activeBtn" href="#about">About</a></li>
+                    <li><a class="activeBtn" href="#services">Services</a></li>
+                    <li><a class="activeBtn" href="#projects">Services</a></li>
+                    <li><a class="activeBtn" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sdbrIcons row m-0 p-5">
+            <div class="sdbrIcn col-12 m-0 p-0">
+                <a target="_blank" href="https://www.facebook.com/Huzaifa Ishaque">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/Huzaifa ishaque/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a target="_blank" href="https://wa.me/03172845238">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://github.com/kamrananwerfancy">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
     </div>
-  </body>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, it's Me</h3>
+            <h1><span>Huzaifa</span> ishaq</h1>
+            <h3>And I'm a <span>Front-end Developer </span></h3>
+            <p>I build a attractive and responsive websites and create a more efficiently <br> website that will help to
+                behaves smoothly and makes a user experience better.</p>
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/Huzaifa Ishaque"><i class='bx bxl-facebook'></i></a>
+                <a target="_blank" href=""> <i class='bx bxl-github'></i></a>
+                <a target="_blank" href="https://wa.me/03172845238"><i class='bx bxl-whatsapp'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/Huzaifa ishaque/"><i
+                        class='bx bxl-linkedin'></i></a>
+
+            </div>
+            <a target="_blank" href="./images/huzaifacv.pdf" class="btn">Resume</a>
+        </div>
+        <div class="home-img">
+            <img height="550px" width="570" src="images/boy-working-on-laptop-with-idea-5520347-4615333.webp" alt="">
+
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img class="hassam" src="images/huzaifa.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">
+                About <span>Me</span>
+            </h2>
+            <h2 class="Arg">Who Am I <span style="color:#0ef;">?</span></h2>
+            <h1><span>Huzaifa</span> Ishaq</h1>
+            <h3>Front-end Developer & Designer</h3>
+            <h2 class="subheading">My Expertise : <span class="multiple-text"></span></h2>
+            <h4>Web Developer :</h4>
+            <p>Hello! I'm Huzaifa, a passionate and dedicated Front-end Developer<br>
+                with over three years of professional experience specializing in Angular and TypeScript.<br>
+                During my time in the industry, I've had the opportunity to work with a talented team ..!</p>
+            <button type="button" class="btn read-more" data-toggle="modal" data-target="#aboutModal">
+                Read More
+            </button>
+
+            <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="aboutModalLabel">About Me</h5>
+                            <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Hello! I'm Huzaifa, a passionate and dedicated Front-end Developer with over three years
+                                of professional experience specializing in Angular and TypeScript. During my time in the
+                                industry, I've had the opportunity to work with a talented team at <strong><span
+                                        class="companyName">Office Automation Services</span></strong>, where I've honed
+                                my skills in building responsive and user-friendly web applications.</p>
+                            <p>I thrive on creating visually appealing and efficient websites that provide a seamless
+                                user experience. My expertise lies in translating complex ideas into intuitive designs
+                                and implementing them with clean, maintainable code. I'm constantly exploring new
+                                technologies and techniques to enhance my craft and deliver exceptional digital
+                                solutions.</p>
+                            <p>Whether you're looking to revamp an existing website or create a brand-new online
+                                presence, I'm here to bring your vision to life with creativity and precision.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="projects-section" id="projects">
+        <h2 style="color: #0ef;"><span style="color: white;">Mine</span> Projects</h2>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="images/pro1.jfif" alt="Responsive Personal Blog Layout" class="project-image">
+                <h3>Responsive Personal Blog Layout</h3>
+                <p>Designed and built a fully responsive personal blog layout using HTML and CSS.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> HTML, CSS (Flexbox, Grid), Media Queries</li>
+                    <li><strong>Features:</strong> Responsive design, grid-based layout, custom typography</li>
+                </ul>
+            </div>
+
+
+            <div class="project-card">
+                <img src="images/pro1.jfif" alt="CSS-Only Animated Landing Page" class="project-image">
+                <h3>CSS-Only Animated Landing Page</h3>
+                <p>Created a visually stunning landing page with CSS animations and transitions.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> HTML, CSS (Animations, Transitions)</li>
+                    <li><strong>Features:</strong> Smooth hover effects, responsive design, no JavaScript</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <img src="images/pro1.jfif" alt="Pure CSS Image Gallery" class="project-image">
+                <h3>Pure CSS Image Gallery</h3>
+                <p>Developed a responsive image gallery using CSS Grid and Flexbox.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> HTML, CSS (Grid, Flexbox)</li>
+                    <li><strong>Features:</strong> Grid layout, hover effects, fully responsive</li>
+                </ul>
+            </div>
+
+
+            <div class="project-card">
+                <img src="images/pro1.jfif" alt="CSS-Only Pricing Table" class="project-image">
+                <h3>CSS-Only Pricing Table</h3>
+                <p>Designed a clean and modern pricing table using HTML and CSS.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> HTML, CSS (Flexbox, Media Queries)</li>
+                    <li><strong>Features:</strong> Responsive layout, hover effects, custom styling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+
+    <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="education-container">
+            
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>matriculation</h3>
+                    <p class="institution"> Board of secondry education karachi(sindh) </p>
+                    <p class="duration">2018 - 2022</p>
+                    <p class="description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptas saepe fugit neque in
+                        soluta, ipsam non! Officia, et sit soluta provident quas repudiandae totam ex nesciunt, sequi
+                        laudantium quod. </p>
+                </div>
+            </div>
+
+
+            <div class="education-item" id="education">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Intermediate</h3>
+                    <p class="institution">HBJ jatoi degree college dokri</p>
+                    <p class="duration">2016 - 2018</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus eos ratione
+                        impedit repudiandae vero dicta in maiores, dolore quaerat facere provident perspiciatis quas
+                        doloremque soluta totam. Adipisci, velit et.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Online Course: Full-Stack Web Development</h3>
+                    <p class="institution">Example Online Platform</p>
+                    <p class="duration">2024-25</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias error voluptate iste
+                        voluptates, doloribus aperiam. Asperiores temporibus incidunt optio cupiditate exercitationem
+                        ullam earum, cum enim repudiandae iusto fugit officiis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contactForm">
+            <div class="input-box">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+                <input type="text" id="emailSubject" placeholder="Email Subject" required>
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="submitBtn">
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright & Copy: 2025 by <span>Huzaifa</span> | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.6.2/dist/email.min.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
 </html>
