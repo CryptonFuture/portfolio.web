@@ -270,9 +270,6 @@ body {
   padding: 2rem;
   background-color: #0f1216;
   text-align: center;
-
-
-
 }
 
 .education-section h2 {
@@ -287,8 +284,6 @@ body {
 
 
   text-align: left;
-
-
 }
 
 .education-item {
@@ -412,9 +407,6 @@ body {
 .project-card {
   background: #0f1216;
   border: 4px solid var(--main-color);
-
-
-
   border-radius: 8px;
   padding: 1.5rem;
   width: 300px;
@@ -461,7 +453,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* end od copy css from deep seek */
+
 
 .contact form {
   max-width: 70rem;
@@ -522,13 +514,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
   padding: 2rem 9%;
   background: var(--second-bg-color);
 
 }
-
-
 
 .footer-text {
   font-size: 1.8rem;
@@ -549,9 +538,6 @@ body {
   background: var(--main-color);
   border-radius: .8rem;
   text-align: center;
-
-
-
 }
 
 .footer-iconTop a:hover {
